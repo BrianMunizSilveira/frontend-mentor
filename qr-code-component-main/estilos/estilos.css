@@ -42,13 +42,20 @@ h1 {
 
 span {
     color: var(--grayish-blue);
-    font-size: 1.32rem;
+    font-size: 15px;
     text-align: center;
     margin: 1rem 0 2rem;
+    width: 75%;
 }
 
 img {
     margin-bottom: 1rem;
     border-radius: 10px;
     width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    section {
+       max-width: 360px;
+    }
 }
