@@ -8,8 +8,7 @@
 body {
     background: hsl(225, 100%, 94%) url('../images/pattern-background-desktop.svg') no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,11 +86,13 @@ main .informations a:hover {
     text-decoration: none;
 }
 
-main button {
+main .button {
     cursor: pointer;
     background: hsl(245, 75%, 52%);
     color: #fff;
     font-weight: 600;
+    text-align: center;
+    text-decoration: none;
     border: none;
     width: 100%;
     padding: 1rem 0;
@@ -101,7 +102,7 @@ main button {
     transition: background 0.3s;
 }
 
-main button:hover {
+main .button:hover {
     background: #766CF1;
 }
 
