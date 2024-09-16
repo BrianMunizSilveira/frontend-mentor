@@ -1,33 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset e Configurações Globais */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
 }
 
 header img {
-    width: 150px;
+    width: 120px;
+    height: auto;
 }
 
+/* Main Container */
 main {
-    max-width: 800px;
+    max-width: 90%;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 1.5rem;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
+/* Títulos */
 h2, h3 {
     color: #333;
+}
+
+/* Navegação */
+nav {
+    margin-bottom: 2rem;
 }
 
 nav ul {
@@ -41,13 +65,14 @@ nav ul li {
 
 nav ul li a {
     color: #007BFF;
-    text-decoration: none;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Seções */
 section {
     margin-bottom: 2rem;
 }
@@ -55,27 +80,61 @@ section {
 section img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
+/* SVGs */
 svg {
     display: inline-block;
     vertical-align: middle;
     margin-right: 0.5rem;
 }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* Rodapé */
 footer {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem 0;
     background: #333;
     color: #fff;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header img {
+        width: 100px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 80px;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.5rem 0;
+    }
 }
